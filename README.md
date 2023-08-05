@@ -82,11 +82,12 @@ contribute? Sure! EZ-Name is an open-source project, and I welcome contributions
 
 <br>
 
+
 ## Details
 
 ---
 
-There are no dependencies or libraries at this point. It's just a simple script that you can deploy over a directory with an option to include the files contained with it's sub-driectories.
+This script uses the Python standard library, including the `os` and `tkinter` modules. It's a simple script that you can deploy over a directory with an option to include the files contained within its subdirectories.
 
 <br>
 
@@ -94,7 +95,7 @@ To run this program:
 
 <br>
 
-open up your os's terminal and use the `cd` into an appropriate place to store the program.
+Open up your OS's terminal and use the `cd` command to navigate to an appropriate place to store the program.
 
 <br>
 
@@ -105,7 +106,7 @@ cd HardDrive/Users/YourUsername/Documents/
 ```
 <br>
 
-clone this repository by copy pasting the following command:
+Clone this repository by copy pasting the following command:
 
 ```shell
 git clone https://github.com/augurybot3/EZ-Name.git
@@ -113,7 +114,7 @@ git clone https://github.com/augurybot3/EZ-Name.git
 
 <br>
 
-hit enter. navigate into the repository root directory:
+Hit enter. Navigate into the repository root directory:
 
 ```shell
 cd EZ-Name
@@ -121,10 +122,9 @@ cd EZ-Name
 
 <br>
 
+> Note: The only dependencies are Python 3 and tkinter, which is included in the Python standard library. So, no need to install a virtual environment or set any variables.
 
-> Note: There are no dependencies at this stage. Just Python 3. So, no need to install a virtual environment or set any variables.
-
-now you can just run the script:
+Now you can just run the script:
 
 ```shell
 python3 app.py
@@ -132,47 +132,20 @@ python3 app.py
 
 <br>
 
-In a moment, you'll have to tell the script where the files are that you'd like to rename by providing the path.
 
-before you do that, a message will appear asking if you would like to include files contained within all of the sub-directories as well as the main directory that you specify. 
+A window will appear where you can navigate to the directory that contains the files you'd like to rename.
 
-<br>
-
-If so, typoe:
-
-```shell
-RENAME-ALL-FILES
-```
-
-then hit `return` or `enter`
+Next message box will appear asking if you would like to include files contained within all of the sub-directories as well as the main directory that you specify. 
 
 <br>
 
-if NOT:
-
-Press any key to continue. This is the default. This will not rename any files contained within any sub folders.
-
-Now enter the path to the absolute path to the folder that contains the files that you'd like to rename.
+If so, click "Yes".
 
 <br>
 
-using our example from above, assuming your files are in the `Documents` directory you could type this:
-
-```shell
-/Users/YourUserName/Documents/FolderWithFilesToRename
-```
-
-or in this case, since both the folder and the script are both located in the `Documents` directory you could type:
-
-```shell
-../Documents/FolderWithFilesToRename
-```
-
-whereby `FolderWithFilesToRename` is the name of your actual folder.
+If not, click "No". This will not rename any files contained within any subfolders.
 
 <br>
-
-hit enter.
 
 A message will be printed to the terminal for each action that was taken (the file was either renamed, skipped if not applicable or a copy was created if there was a naming conflict).
 
