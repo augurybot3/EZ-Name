@@ -108,7 +108,7 @@ cd HardDrive/Users/YourUsername/Documents/
 clone this repository by copy pasting the following command:
 
 ```shell
-git clone 
+git clone https://github.com/augurybot3/EZ-Name.git
 ```
 
 <br>
